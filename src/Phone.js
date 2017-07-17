@@ -21,7 +21,7 @@ class Phone extends Component {
         this.getMetadata(this.state.region);
     }
 
-    // Get the metadata initialize phone handler
+    // Get the metadata and initialize phone handler
     getMetadata(region) {
         fetch(`/api/metadata/${region}`)
             .then(res => res.json())
@@ -34,7 +34,7 @@ class Phone extends Component {
         const fixedExample = this.phoneHandler.getExampleNumberForType('FIXED_LINE', this.state.region);
 
         const mobileNational = this.phoneHandler.formatPhoneNumber(mobileExample, { style: 'national' });
-        const mobileInternational = this.phoneHandler.formatPhoneNumber(mobileExample, { style: 'national' });
+        const mobileInternational = this.phoneHandler.formatPhoneNumber(mobileExample, { style: 'international' });
 
         const fixedNational = this.phoneHandler.formatPhoneNumber(fixedExample, { style: 'national' });
         const fixedInternational = this.phoneHandler.formatPhoneNumber(fixedExample, { style: 'international' });
