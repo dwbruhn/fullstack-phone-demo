@@ -1,7 +1,16 @@
 # fullstack-phone-demo
 
-Simple React+Express app demonstrating usage of [fullstack-phone](https://github.com/dwbruhn/fullstack-phone)
+Very simple React + Express app demonstrating server and client usage of [fullstack-phone](https://github.com/dwbruhn/fullstack-phone)
+
+## Usage
 
 Requires node 6+.
 
-    npm run dev
+```bash
+npm install
+npm run dev # opens http://localhost:3000 in browser
+```
+
+## Screenshot
+
+![screenshot](./screenshot.png)

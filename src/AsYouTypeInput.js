@@ -37,9 +37,12 @@ class AsYouTypeInput extends Component {
     render() {
         return (
             <div>
-                <h3>Type a phone number:</h3>
-                <div><input type="text" onChange={this.handleInput} /></div><br />
-                <h3>{this.state.output}</h3>
+                <div>
+                    <h3 style={{ float: 'left' }}>
+                    Type a phone number: <input type="text" onChange={this.handleInput} />
+                        &nbsp;{this.state.output}
+                    </h3>
+                </div>
             </div>
         )
     }
